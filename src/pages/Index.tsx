@@ -1,12 +1,50 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from 'react';
+import Hero from '@/components/Hero';
+import AboutSection from '@/components/AboutSection';
+import SolutionsSection from '@/components/SolutionsSection';
+import PortfolioSection from '@/components/PortfolioSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 
 const Index = () => {
+  useEffect(() => {
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    });
+
+    const revealElements = document.querySelectorAll('.reveal');
+    revealElements.forEach(el => {
+      observer.observe(el);
+    });
+
+    return () => {
+      revealElements.forEach(el => {
+        observer.unobserve(el);
+      });
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="overflow-hidden">
+      <Navbar />
+      <Hero />
+      <AboutSection />
+      <SolutionsSection />
+      <PortfolioSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 };
