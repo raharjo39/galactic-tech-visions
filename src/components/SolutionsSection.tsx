@@ -1,7 +1,7 @@
 
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Ai, Database, Cloud, Drone, Server } from 'lucide-react';
+import { Brain, Database, Cloud, Plane, Server } from 'lucide-react';
 
 const SolutionsSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -40,7 +40,7 @@ const SolutionsSection = () => {
 
   const solutions = [
     {
-      icon: <Ai className="h-10 w-10 text-galactic-blue" />,
+      icon: <Brain className="h-10 w-10 text-galactic-blue" />,
       title: "AI SaaS Suite",
       description: "Enterprise-grade AI solutions tailored for Indonesian businesses.",
       link: "/solutions/ai"
@@ -58,7 +58,7 @@ const SolutionsSection = () => {
       link: "/solutions/iot"
     },
     {
-      icon: <Drone className="h-10 w-10 text-galactic-blue" />,
+      icon: <Plane className="h-10 w-10 text-galactic-blue" />,
       title: "Aerial Mapping & Drone Solutions",
       description: "Precision mapping services for multiple industry applications.",
       link: "/solutions/drone"

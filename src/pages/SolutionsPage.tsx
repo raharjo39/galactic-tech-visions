@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Ai, Database, Cloud, Drone, Server, ArrowRight } from 'lucide-react';
+import { Brain, Database, Cloud, Plane, Server, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const SolutionsPage = () => {
@@ -47,7 +47,7 @@ const SolutionsPage = () => {
   const solutions = [
     {
       id: "ai",
-      icon: <Ai className="h-10 w-10 text-galactic-blue" />,
+      icon: <Brain className="h-10 w-10 text-galactic-blue" />,
       title: "AI SaaS Suite",
       description: "Our AI SaaS Suite offers enterprise-grade artificial intelligence solutions specifically tailored for Indonesian businesses. From natural language processing that understands Bahasa Indonesia to computer vision systems designed for local infrastructures, our AI tools help organizations automate processes, gain insights from data, and make smarter decisions.",
       features: [
@@ -89,7 +89,7 @@ const SolutionsPage = () => {
     },
     {
       id: "drone",
-      icon: <Drone className="h-10 w-10 text-galactic-blue" />,
+      icon: <Plane className="h-10 w-10 text-galactic-blue" />,
       title: "Aerial Mapping & Drone Solutions",
       description: "Our drone-based services provide precision mapping and aerial data collection for multiple industry applications. From construction site monitoring to agricultural analysis, our drone solutions capture detailed imagery and data that help businesses make better decisions about their physical assets and operations.",
       features: [
