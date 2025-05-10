@@ -40,13 +40,6 @@ const PortfolioSection = () => {
 
   const portfolioItems = [
     {
-      id: "bsd-digital-twin",
-      title: "Digital Twin of BSD City",
-      description: "Developed a digital twin for BSD City to enable real-time monitoring, simulation, and smart urban planning.",
-      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984",
-      category: "Digital Twin"
-    },
-    {
       id: "palm-oil-iot",
       title: "IoT System for Palm Oil Plantation - 3000Ha",
       description: "Implemented a connected ecosystem improving irrigation, crop health monitoring, and sustainability across a 3000-hectare plantation.",
@@ -55,8 +48,8 @@ const PortfolioSection = () => {
     },
     {
       id: "smartfren-cctv",
-      title: "Utility CCTV & Visitor Management System for BSD Smartfren",
-      description: "Deployed a smart CCTV network and visitor system to enhance security and operational efficiency at Smartfren BSD.",
+      title: "Utility CCTV & Visitor Management System for Smartfren",
+      description: "Deployed a smart CCTV network and visitor system to enhance security and operational efficiency at Smartfren.",
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
       category: "Security Systems"
     }

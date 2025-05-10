@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -11,29 +12,6 @@ const ProjectDetailPage = () => {
   const navigate = useNavigate();
   
   const projects = {
-    "bsd-digital-twin": {
-      title: "Digital Twin of BSD City",
-      client: "BSD Smart City Initiative",
-      location: "BSD City, Tangerang",
-      year: "2022",
-      category: "Digital Twin",
-      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984",
-      gallery: [
-        "https://images.unsplash.com/photo-1553877522-43269d4ea984",
-        "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df",
-        "https://images.unsplash.com/photo-1493246507139-91e8fad9978e"
-      ],
-      overview: "We developed a comprehensive digital twin for BSD City to enable real-time monitoring, simulation, and smart urban planning capabilities.",
-      highlights: [
-        "High-fidelity 3D modeling of the entire BSD City area",
-        "Integration with IoT sensors for real-time data collection",
-        "Advanced analytics for traffic flow optimization",
-        "Environmental monitoring and pollution tracking",
-        "Scenario planning tools for urban development",
-        "Mobile and desktop interfaces for stakeholders"
-      ],
-      description: "The BSD City Digital Twin project transformed urban planning and management capabilities for one of Indonesia's premier planned communities. By creating a virtual replica of the entire city, GLC enabled stakeholders to visualize, analyze, and optimize various aspects of urban operations in real-time. The system integrates data from thousands of IoT sensors throughout the city, providing insights on traffic patterns, energy usage, environmental conditions, and more. City planners can now test different scenarios before implementing changes in the physical world, leading to more efficient and effective decision-making. The project represents one of the most advanced smart city implementations in Southeast Asia and serves as a model for future digital twin deployments across Indonesia."
-    },
     "palm-oil-iot": {
       title: "IoT System for Palm Oil Plantation - 3000Ha",
       client: "Major Indonesian Agricultural Company",
@@ -58,9 +36,9 @@ const ProjectDetailPage = () => {
       description: "For this major agricultural project, GLC deployed one of Indonesia's largest IoT networks in an agricultural setting. Spanning 3000 hectares of palm oil plantation in East Kalimantan, the system revolutionized how the client monitors and manages their operations. The comprehensive solution includes soil sensors, environmental monitors, automated irrigation systems, and drone-based imaging. Since implementation, the plantation has seen a 15% reduction in water usage, a 20% decrease in fertilizer application, and a 12% increase in yield. The system also supports the client's sustainability initiatives by providing detailed environmental impact data and optimizing resource use. This project demonstrates how advanced IoT technology can transform traditional agricultural practices in Indonesia, improving both productivity and environmental stewardship."
     },
     "smartfren-cctv": {
-      title: "Utility CCTV & Visitor Management System for BSD Smartfren",
+      title: "Utility CCTV & Visitor Management System for Smartfren",
       client: "Smartfren",
-      location: "BSD City, Tangerang",
+      location: "Jakarta",
       year: "2021",
       category: "Security Systems",
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
@@ -69,7 +47,7 @@ const ProjectDetailPage = () => {
         "https://images.unsplash.com/photo-1568115141060-e3eefe061e20",
         "https://images.unsplash.com/photo-1555952517-a0d2eeaad9c6"
       ],
-      overview: "We deployed a smart CCTV network and visitor management system to enhance security and operational efficiency at Smartfren BSD.",
+      overview: "We deployed a smart CCTV network and visitor management system to enhance security and operational efficiency at Smartfren.",
       highlights: [
         "Network of 200+ AI-enabled security cameras",
         "Facial recognition and biometric access control",
@@ -78,7 +56,7 @@ const ProjectDetailPage = () => {
         "Mobile security alerts and notifications",
         "Comprehensive data analytics for security patterns"
       ],
-      description: "Smartfren, one of Indonesia's leading telecommunications providers, needed a comprehensive security and visitor management solution for their BSD City facility. GLC delivered an integrated system that combines advanced CCTV technology with intelligent visitor management capabilities. The solution incorporates AI-powered analytics for anomaly detection, facial recognition for access control, and automated visitor processing to streamline entry procedures. Since implementation, security incidents have decreased by 35%, and visitor processing time has been reduced by 75%. The system also provides valuable operational insights through its analytics dashboard, helping Smartfren optimize facility usage and resource allocation. This project showcases GLC's ability to combine various technologies into a cohesive solution that addresses multiple organizational needs."
+      description: "Smartfren, one of Indonesia's leading telecommunications providers, needed a comprehensive security and visitor management solution for their facility. GLC delivered an integrated system that combines advanced CCTV technology with intelligent visitor management capabilities. The solution incorporates AI-powered analytics for anomaly detection, facial recognition for access control, and automated visitor processing to streamline entry procedures. Since implementation, security incidents have decreased by 35%, and visitor processing time has been reduced by 75%. The system also provides valuable operational insights through its analytics dashboard, helping Smartfren optimize facility usage and resource allocation. This project showcases GLC's ability to combine various technologies into a cohesive solution that addresses multiple organizational needs."
     }
   };
 
