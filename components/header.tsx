@@ -13,11 +13,17 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="relative w-full border-b bg-background z-10">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/images/gip-logo.jpeg" alt="GIP Logo" width={100} height={40} className="h-8 w-auto" />
+            <Image
+              src="/images/gip-logo-transparent.png"
+              alt="GIP Logo"
+              width={100}
+              height={40}
+              className="h-8 w-auto"
+            />
             <span className="sr-only">PT. Galactic Indonesia Perkasa</span>
           </Link>
         </div>

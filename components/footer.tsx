@@ -9,7 +9,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Image src="/images/gip-logo.jpeg" alt="GIP Logo" width={120} height={48} className="h-10 w-auto" />
+              <Image
+                src="/images/gip-logo-transparent.png"
+                alt="GIP Logo"
+                width={120}
+                height={48}
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">Infra & AI Ecosystem for Indonesia's Digital Future</p>
             <div className="flex space-x-4 mt-4">
