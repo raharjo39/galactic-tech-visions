@@ -40,13 +40,6 @@ const PortfolioSection = () => {
 
   const portfolioItems = [
     {
-      id: "sinarmas-data-center",
-      title: "Sinarmas 1 kW Data Center - BSD Business District",
-      description: "Built a cutting-edge, energy-efficient data center at BSD with advanced cooling technologies.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-      category: "Data Center"
-    },
-    {
       id: "bsd-digital-twin",
       title: "Digital Twin of BSD City",
       description: "Developed a digital twin for BSD City to enable real-time monitoring, simulation, and smart urban planning.",

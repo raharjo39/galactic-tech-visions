@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -12,29 +11,6 @@ const ProjectDetailPage = () => {
   const navigate = useNavigate();
   
   const projects = {
-    "sinarmas-data-center": {
-      title: "Sinarmas 1 kW Data Center - BSD Business District",
-      client: "Sinarmas Land",
-      location: "BSD City, Tangerang",
-      year: "2023",
-      category: "Data Center",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-      gallery: [
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-        "https://images.unsplash.com/photo-1539193143244-c83d9436d633",
-        "https://images.unsplash.com/photo-1607604760190-ec4e3e59b4da"
-      ],
-      overview: "We designed and built a cutting-edge, energy-efficient data center at BSD Business District with advanced cooling technologies and state-of-the-art infrastructure.",
-      highlights: [
-        "1 kW power capacity with N+1 redundancy",
-        "Energy-efficient cooling system optimized for tropical climate",
-        "Tier III certification standards",
-        "Advanced fire suppression and security systems",
-        "24/7 remote monitoring capabilities",
-        "Modular design allowing for future expansion"
-      ],
-      description: "The Sinarmas 1 kW Data Center at BSD Business District represents a significant milestone in Indonesia's data infrastructure development. Designed with energy efficiency and reliability as core principles, this facility incorporates the latest innovations in cooling technology, power management, and security systems. The project required close collaboration with Sinarmas Land to ensure the data center would meet their current requirements while allowing for future growth. Despite challenging timelines and complex technical requirements, GLC successfully delivered the project on schedule and within budget. The facility now serves as a critical infrastructure hub for Sinarmas' operations, providing reliable, secure, and efficient data processing capabilities."
-    },
     "bsd-digital-twin": {
       title: "Digital Twin of BSD City",
       client: "BSD Smart City Initiative",
